@@ -1,5 +1,5 @@
 class Labels:
-  color=None
+  colorList=None
   gender=None
   type=None
   size=None
