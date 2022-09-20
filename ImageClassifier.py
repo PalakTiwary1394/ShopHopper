@@ -67,13 +67,13 @@ class ImageClassifier:
             return the predicted label and the probability.
         """
         #full_path = os.path.join(image_file_path,image_file_name)
-        print("image_path is: ", img_path)
+        # print("image_path is: ", img_path)
         img = PILImage.create(img_path)
         # apply the model to the image
         pred_class, pred_idx, prob = self.model.predict(img)
         probability = f'{prob[pred_idx]:.04f}'
         predict_string = f'Prediction: {pred_class}\nProbability: {prob[pred_idx]:.04f}'   
-        print(predict_string)
+        # print(predict_string)
         return pred_class, probability
     
     def prepare_the_training_set(self, training_path:str):

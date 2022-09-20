@@ -113,3 +113,5 @@ def test():
         product = auto_detect(enter)
         product.info()
         enter = input("Enter the text for detection ('q' for quit): " )
+
+# test()
